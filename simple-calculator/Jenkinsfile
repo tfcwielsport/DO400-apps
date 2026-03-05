@@ -4,8 +4,8 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
- 		sendNotification('started', 'team@example.com')
-                git branch: 'notifications',
+ 		sendNotification('started', 'team@domain.com')
+                git branch: 'solutions',
                     url: 'https://github.com/tfcwielsport/DO400-apps'
             }
         }
